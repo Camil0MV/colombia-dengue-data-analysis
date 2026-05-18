@@ -1,0 +1,7 @@
+﻿Variable,Rol,Tratamiento en este notebook
+COD_MUN_N,Identificador geográfico,Contar municipios y usar como llave; no interpretar su distribución.
+ANO,Identificador temporal,Usar para cortes temporales; no interpretar media o boxplot.
+SEMANA,Identificador temporal,Usar como semana epidemiológica; no tratar como variable continua.
+week_date,Fecha,Usar para ordenar y perfilar temporalmente; el análisis temporal principal queda para el notebook 05.
+week_start,Fecha original,Fuente de week_date; no analizar distributivamente.
+MES,Categoría temporal,"Tratar como variable categórica/estacional, no como número continuo."

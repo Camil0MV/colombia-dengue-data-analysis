@@ -1,0 +1,4 @@
+﻿Alerta,Evidencia,Acción sugerida
+Faltantes climáticos y ambientales,"temp_mean: 77.9%, prec_total: 34.6%, ndvi_mean: 0.1%",Documentar patrón de faltantes y decidir tratamiento en notebook de mejora de datos
+Cobertura parcial de estratos,"Estratos cubren 47.2% de casos y difieren de casos_totales en 109,142 filas",Tratar estratos como información parcial; evitar porcentajes como distribución completa
+Interpretación de valores atípicos,Q1 y Q3 de casos_totales son 0; IQR marcaría cualquier caso positivo como atípico,Usar percentiles altos y visualizaciones en escala logarítmica para describir alta incidencia

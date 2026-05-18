@@ -1,0 +1,7 @@
+﻿Validación,Filas fallidas,Resultado,Impacto
+Los grupos etarios suman los casos totales,0,PASA,-
+Los grupos por sexo suman los casos totales,0,PASA,-
+Todos los casos son no negativos,0,PASA,-
+Temperatura en rango válido (-50 °C a 50 °C),0,PASA,-
+Precipitación no negativa,0,PASA,-
+Población no nula,0,PASA,-

@@ -1,0 +1,9 @@
+﻿Variable,Problema identificado,Implicación analítica
+casos_totales,Alta masa en cero y cola derecha,"Evaluar log1p, tasas y métodos robustos antes de análisis multivariado."
+casos por edad/sexo,Conteos absolutos estratificados,No interpretar como riesgo sin denominadores; usar principalmente para composición descriptiva.
+estrato_1_2 / 3_4 / 5_plus,Cobertura socioeconómica parcial y concentración en estratos 1-2,Documentar sesgo de registro antes de imputar o comparar estratos.
+temp_mean,Faltantes altos,"Requiere estrategia explícita de imputación, restricción de muestra o análisis de sensibilidad."
+prec_total,"Faltantes moderados, ceros y extremos",Distinguir ceros reales de ausencias; considerar transformación para colas derechas.
+poblacion,Asimetría por municipios grandes,"Preferir tasas, offsets descriptivos o escalamiento en análisis posteriores."
+Flujo_in,Cola derecha y posibles extremos,Revisar outliers y robustez antes de usarlo como proxy de movilidad.
+"COD_MUN_N, ANO, SEMANA, week_date, MES",Variables índice/categóricas,"No analizarlas como distribuciones continuas; usarlas para agrupación, ordenamiento o estacionalidad."

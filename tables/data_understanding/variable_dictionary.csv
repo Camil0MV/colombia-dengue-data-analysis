@@ -1,0 +1,23 @@
+﻿Variable,Tipo,Rol,Descripción,Rango,Faltantes
+COD_MUN_N,Entero (ID),Identificador geográfico,Código municipal colombiano (formato DIVIPOLA),5001-99773,0.0%
+ANO,Entero,Identificador temporal,Año epidemiológico,2010-2024,0.0%
+SEMANA,Entero,Identificador temporal,Semana epidemiológica (1-53),1-53,0.0%
+week_date,Fecha/hora,Variable temporal (construida),Fecha de inicio semanal tomada de week_start,2010-01-04-2024-12-23,0.0%
+casos_totales,Entero (conteo),Variable principal de análisis,Total de casos de dengue reportados en municipio-semana,0-1426,0.0%
+casos_0_4,Entero (conteo),Secundaria - Estratificación por edad,Casos de dengue en edades 0-4 años,0-95,0.0%
+casos_5_14,Entero (conteo),Secundaria - Estratificación por edad,Casos de dengue en edades 5-14 años,0-421,0.0%
+casos_15_64,Entero (conteo),Secundaria - Estratificación por edad,Casos de dengue en edades 15-64 años,0-839,0.0%
+casos_65_plus,Entero (conteo),Secundaria - Estratificación por edad,Casos de dengue en edades 65+ años,0-107,0.0%
+casos_m,Entero (conteo),Secundaria - Estratificación por sexo,Casos de dengue en hombres,0-707,0.0%
+casos_f,Entero (conteo),Secundaria - Estratificación por sexo,Casos de dengue en mujeres,0-748,0.0%
+estrato_1_2,Entero (conteo),Variable socioeconómica de cobertura parcial,Casos con registro en estratos socioeconómicos 1-2; cobertura parcial respecto a casos_totales,0-658,0.0%
+estrato_3_4,Entero (conteo),Variable socioeconómica de cobertura parcial,Casos con registro en estratos socioeconómicos 3-4; cobertura parcial respecto a casos_totales,0-684,0.0%
+estrato_5_plus,Entero (conteo),Variable socioeconómica de cobertura parcial,Casos con registro en estratos socioeconómicos 5+; cobertura parcial respecto a casos_totales,0-93,0.0%
+MES,Entero,Temporal - Mes,"Mes calendario (1=ene, 12=dic)",1-12,0.0%
+temp_mean,Decimal (°C),Variable climática,Temperatura media (promedio semanal de satélite/estaciones),2.6 deg C - 34.4 deg C,77.9%
+prec_total,Decimal (mm),Variable climática,Precipitación total (acumulado semanal),0.0mm - 1053.0mm,34.6%
+ndvi_mean,Decimal (Índice),Variable ambiental,"Índice de vegetación de diferencia normalizada (densidad vegetal, rango 0-1)",0.066 - 0.886,0.1%
+oni_anom,Decimal (anomalía),Variable climática oceánica,Anomalía del Índice Niño oceánico (proxy de El Niño/La Niña),-1.64 - 2.75,0.0%
+oni_total,Decimal (Índice),Variable climática oceánica,Índice Niño oceánico (valor absoluto),25.02 - 29.26,0.0%
+Flujo_in,Decimal (Índice/flujo),Variable de movilidad,Indicador de movilidad entrante (movimiento humano hacia el municipio),0.00 - 1337.56,0.1%
+poblacion,Entero (conteo),Variable demográfica,Población municipal (anual),"766 - 7,149,540",0.0%

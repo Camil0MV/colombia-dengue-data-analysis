@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "files.encoding": "utf8",
+    "editor.rulers": [88],
+    "python.defaultInterpreterPath": ".venv\\Scripts\\python.exe",
+    "jupyter.askForKernelRestart": false,
+    "notebook.formatOnSave.enabled": true,
+    "snyk.advanced.autoSelectOrganization": true,
+    "snyk.advanced.organization": "6fc37f90-d7a9-4a3b-ae77-91fa7a7d3639",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
+}

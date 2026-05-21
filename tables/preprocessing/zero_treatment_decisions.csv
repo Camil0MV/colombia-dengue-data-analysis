@@ -1,0 +1,4 @@
+﻿Patrón,Interpretación,Decisión,Justificación
+casos_totales = 0,Cero epidemiológico real,MANTENER,"En municipios activos, el cero indica periodo inter-epidémico. En municipios siempre-cero puede indicar ausencia real de Aedes aegypti (altitud, clima) o subnotificación crónica. No es posible distinguir sin información externa del sistema de vigilancia."
+prec_total = 0,Cero meteorológico real (semana seca),MANTENER,"La concentración en enero (45%), febrero (35%) y diciembre (33%) coincide con la temporada seca de la región Caribe y valles interandinos. El patrón estacional confirma que son semanas sin lluvia, no fallas de medición."
+Flujo_in = 0,Artefacto de inicio de medición,IMPUTAR con mínimo no-cero del municipio,"Los 752 ceros corresponden exactamente a time_idx=0 (semana 1 de 2010) y time_idx=313 (semana 1 de 2016) en todos los 376 municipios. Es un artefacto de calibración del sistema de medición de movilidad, no ausencia real de movimiento."

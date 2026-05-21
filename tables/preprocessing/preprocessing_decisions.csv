@@ -1,0 +1,13 @@
+﻿Decisión,Acción,Justificación
+Imputación de temp_mean,Documentada como preexistente,64% del dataset tiene temp imputada con media global. Se crea flag temp_reliable para marcar 150 municipios con datos creíbles vs 226 municipios sin información climática real.
+Ceros en casos_totales,Mantenidos,Los ceros son epidemiológicamente reales: reflejan periodos sin transmisión o municipios sin endemia. No son falta de reporte en un panel balanceado con cobertura completa.
+Ceros en prec_total,Mantenidos,"Patrón estacional claro: concentrados en meses secos (ene 45%, dic 33%). Son semanas sin lluvia en zonas con temporada seca definida."
+Ceros en Flujo_in,Imputados,"752 ceros en exactamente 2 fechas (semana 1 de 2010 y 2016) para los 376 municipios. Artefacto de calibración del sistema de medición, imputado con mínimo no-cero municipal."
+Transformación log1p,"Aplicada a casos, Flujo_in, poblacion",Reduce skewness de 21-25 a valores manejables. Preserva ceros (log1p(0)=0). Reversible para interpretación.
+Tasa por 100k,Creada,Normaliza por población para comparar incidencia entre municipios de escalas radicalmente diferentes.
+caso_binario,Creado,Separa ocurrencia (¿hay transmisión?) de intensidad (¿cuántos casos?). 42% de observaciones tienen al menos 1 caso.
+Lags epidemiológicos,"lag1, lag2, lag4, roll4, roll12",Capturan inercia del brote. Lag1 tiene ρ=0.98 con casos — la historia reciente es el mejor predictor del presente.
+Lags climáticos,"prec_lag4, prec_lag8, temp_lag4, temp_lag8, prec_acum4",Rezago biológico del vector (4-8 semanas = ciclo larvario + incubación extrínseca).
+Lags ONI,"oni_lag8, oni_lag12",Señal macroclimática diferida. Correlación mejora levemente con lag 12 (ρ=0.08 vs 0.06 contemporáneo).
+Variables estacionales,"trimestre, sem_sin, sem_cos",Codificación cíclica de la semana epidemiológica para capturar estacionalidad sin discontinuidad.
+Warm-up period,12 semanas eliminadas por municipio,Pérdida menor (1.5%) que garantiza completitud de variables de lag y rolling.

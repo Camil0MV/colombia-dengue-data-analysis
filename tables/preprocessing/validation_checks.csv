@@ -1,0 +1,7 @@
+﻿Validación,Resultado,Detalle
+Completitud (sin faltantes en variables numéricas),PASA,Total NaN (excluyendo fase_oni): 0
+Panel balanceado (mismas semanas por municipio),PASA,Semanas por municipio: 770
+Consistencia log1p_casos = log(1 + casos_totales),PASA,Transformación inversa verificada
+"Consistencia tasa_100k = casos / poblacion × 100,000",PASA,Cálculo de tasa verificado
+Lags temporales correctamente alineados,PASA,Verificado en municipio 5001
+No hay valores negativos en variables de conteo/tasa,PASA,"Verificado en: casos_totales, prec_total, Flujo_in, poblacion, tasa_100k"

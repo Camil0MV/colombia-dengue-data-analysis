@@ -1,0 +1,7 @@
+﻿Tipo de outlier,Interpretación,Decisión,Justificación
+casos_totales extremos (P99+),Brotes epidémicos reales,MANTENER,Son el fenómeno a predecir. Eliminarlos sesgaría el modelo contra brotes futuros.
+Tasa x100k extrema en municipios pequeños,Posible artefacto de denominador bajo,REVISAR,Municipios con <5000 hab pueden tener tasas infladas por 1-2 casos. Evaluar winsorización de tasa.
+"temp_mean fuera de [5°C, 35°C]",Posible error de sensor/medición,WINSORIZAR,Temperaturas fuera del rango fisiológicamente posible en Colombia sugieren error de dato.
+prec_total extrema (>P99.5),Eventos climáticos extremos reales,MANTENER,Precipitaciones extremas (>300mm/semana) ocurren en el Pacífico colombiano y son legítimas.
+Flujo_in extremo,"Municipios hub (Bogotá, Medellín, Cali)",MANTENER + TRANSFORMAR,Son legítimos. Se manejan con transformación log que ya se estableció en notebook 02.
+IForest anomalías multivariadas,Combinaciones inusuales legítimas,DOCUMENTAR,Municipios fríos con casos altos = importaciones. No eliminar; agregar flag para análisis de sensibilidad.

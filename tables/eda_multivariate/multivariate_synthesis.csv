@@ -1,0 +1,10 @@
+﻿Hallazgo,Evidencia,Implicación para modelado
+Movilidad como driver principal,"Flujo_in ρ=0.51 (Spearman), coef OLS=0.80 (t=277)",Usar log_flujo como predictor primario; evaluar si subsume el efecto de poblacion.
+Temperatura como habilitador con umbral,ρ=0.10; efecto OLS significativo pero VIF=53 por confounding geográfico,Incluir temp_mean con splines o bins; no esperar relación lineal. Separar efecto del gradiente altitudinal.
+ENSO como modulador temporal fuerte,Tasa El Niño ~3x La Niña; oni_anom ortogonal al resto (VIF=1.08),Incluir oni_anom como feature temporal; explorar lags de 4-8 semanas e interacciones con temperatura.
+Precipitación no discrimina en forma agregada,ρ=0.01; boxplots por cuartil indistinguibles,"No incluir prec_total cruda; requiere feature engineering (lags, rolling means, frecuencia de días secos)."
+Multicolinealidad geográfica severa,"VIF log_poblacion=76, temp_mean=53, ndvi_mean=28",Refleja estructura altitud→temp→urbanización de Colombia. Requiere regularización o efectos espaciales jerárquicos.
+Autocorrelación temporal fuerte,Durbin-Watson=0.526 en OLS,"El modelo final necesita estructura temporal: lags del target, features autorregresivas, o enfoque de series de tiempo."
+Heterogeneidad espacial intra-departamento,Variabilidad similar entre top 10 deptos; outliers varían,Efectos fijos departamentales insuficientes; usar efectos a nivel municipal o embeddings espaciales.
+OLS explica 46.5% con 6 variables,R²=0.465 sobre 294k observaciones,"Base sólida para modelos más complejos; el 53.5% restante es dinámica epidemiológica no capturada (inmunidad, serotipos, control vectorial)."
+Relaciones no-lineales dominan,Spearman > Pearson para Flujo_in y poblacion; hexbins muestran umbrales,Preferir modelos basados en árboles o incluir transformaciones no-lineales explícitas en modelos paramétricos.

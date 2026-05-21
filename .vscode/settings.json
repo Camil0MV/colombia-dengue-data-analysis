@@ -2,7 +2,7 @@
     "editor.formatOnSave": true,
     "files.encoding": "utf8",
     "editor.rulers": [88],
-    "python.defaultInterpreterPath": ".venv\\Scripts\\python.exe",
+    "python.defaultInterpreterPath": ".venv/bin/python3",
     "jupyter.askForKernelRestart": false,
     "notebook.formatOnSave.enabled": true,
     "snyk.advanced.autoSelectOrganization": true,

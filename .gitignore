@@ -66,4 +66,4 @@ logs/
 joblib_cache/
 
 # Large data files (regenerable from notebooks)
-data/**/*.csv
+data/processed/*.csv

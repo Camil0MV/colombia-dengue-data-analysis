@@ -1,0 +1,7 @@
+﻿Original,Transformada,Fórmula,Skew original,Skew transformada
+casos_totales,log1p_casos,log(1+x),33.4,3.03
+Flujo_in,log1p_flujo,log(1+x),37.5,2.90
+poblacion,log_poblacion,log(1+x),23.3,0.86
+casos_totales,tasa_100k,x / poblacion × 100k,-,12.05
+casos_totales,caso_binario,1{x > 0},-,-
+SEMANA,"sem_sin, sem_cos",sin/cos(2π×sem/52),-,-

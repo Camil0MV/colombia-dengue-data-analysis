@@ -1,6 +1,6 @@
 ﻿Método,N
-Solo IQR,23868
-Solo IForest,3875
+Solo IQR,174415
+Solo IForest,796
 Solo LOF,2500
-IQR ∩ IForest,10827
-Consensus (≥2 métodos),10966
+IQR ∩ IForest,7664
+Consensus (≥2 métodos),8324

@@ -1,0 +1,11 @@
+﻿Paso,Método,Resultado
+Filtrado,Seleccionar municipios con 782 semanas completas,"1040 municipios retenidos de 1,040"
+Imputación temp_mean,Interpolación temporal + mediana departamental,"627,235 valores imputados (77.9%)"
+Imputación prec_total,Interpolación temporal + mediana departamental,"278,441 valores imputados (34.6%)"
+Imputación ndvi/Flujo_in,Forward/backward fill por municipio,< 0.1% del dataset
+Escalamiento,"RobustScaler (mediana=0, IQR=1)","5 variables: temp, prec, ndvi, Flujo_in, poblacion"
+Transformación log1p,log(1+x) para reducir asimetría,"casos (skew 33→~2), Flujo_in, poblacion"
+Tasa por 100k,Normalización por denominador poblacional,Permite comparar municipios de distinto tamaño
+Codificación cíclica,sin/cos de semana epidemiológica,Captura estacionalidad sin discontinuidad sem 52→1
+Lags y rolling,"lag1,2,4; roll4; prec_lag4; temp_lag4; oni_lag8",Capturan inercia epidémica y rezago biológico del vector
+Warm-up,Eliminar primeras 8 semanas por municipio,"8,320 filas eliminadas (1.0%)"

@@ -65,16 +65,14 @@ colombia-dengue-data-analysis/
 |   |   |-- 07_faltantes/
 |   |   `-- 08_categoricas_temporales/
 |   |-- outliers/
-|   |-- preprocessing/
-|   `-- temporal_analysis/
+|   `-- preprocessing/
 |-- notebooks/
 |   |-- 00_data_understanding.ipynb
 |   |-- 01_eda_univariate.ipynb
 |   |-- 02_eda_multivariate.ipynb
 |   |-- 03_outliers.ipynb
 |   |-- 04_preprocessing.ipynb
-|   |-- 05_temporal_analysis.ipynb
-|   `-- 06_final_analysis.ipynb
+|   `-- 05_project_documentation.ipynb
 |-- tables/
 |   |-- data_understanding/
 |   `-- eda_univariate/
@@ -103,11 +101,10 @@ Ejecutar los notebooks en orden:
 
 1. `00_data_understanding.ipynb`: comprensión inicial del dataset, estructura panel, duplicados, faltantes, integridad lógica, diccionario de variables y alertas principales.
 2. `01_eda_univariate.ipynb`: análisis exploratorio univariado por variable o grupo temático; distribuciones, ceros, asimetría, curtosis, escalas logarítmicas, violin plots y problemas para notebooks posteriores.
-3. `02_eda_multivariate.ipynb`: análisis de relaciones entre variables.
-4. `03_outliers.ipynb`: identificación y documentación de valores extremos.
-5. `04_preprocessing.ipynb`: tratamiento de faltantes, transformaciones y preparación de datos.
-6. `05_temporal_analysis.ipynb`: análisis temporal y estacional.
-7. `06_final_analysis.ipynb`: consolidación de hallazgos finales.
+3. `02_eda_multivariate.ipynb`: correlaciones Pearson/Spearman, OLS exploratorio, VIF, relaciones bivariadas y comparaciones entre grupos.
+4. `03_outliers.ipynb`: detección multi-método (IQR, MAD, Isolation Forest, LOF), clasificación contextual y decisiones de tratamiento.
+5. `04_preprocessing.ipynb`: evaluación de imputación previa, tratamiento de ceros, transformaciones log, lags temporales, rolling means y exportación del dataset procesado.
+6. `05_project_documentation.ipynb`: documentación del proceso analítico completo, decisiones metodológicas, hallazgos consolidados, limitaciones y líneas futuras.
 
 ## Tablas Exportadas
 

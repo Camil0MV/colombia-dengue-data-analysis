@@ -1,0 +1,5 @@
+﻿Variable,N_faltantes,%_faltantes,N_válidos,Media (válidos),Std (válidos),Municipios sin ningún dato
+temp_mean,633602,77.9%,179678,22.389,5.569,780
+prec_total,281250,34.6%,532030,43.830,55.414,330
+ndvi_mean,782,0.1%,812498,0.624,0.123,1
+Flujo_in,782,0.1%,812498,1.841,13.269,1

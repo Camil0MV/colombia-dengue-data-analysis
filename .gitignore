@@ -64,3 +64,6 @@ logs/
 # Data science generated artifacts
 .cache/
 joblib_cache/
+
+# Large data files (regenerable from notebooks)
+data/**/*.csv

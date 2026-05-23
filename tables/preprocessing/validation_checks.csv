@@ -1,5 +1,5 @@
 ﻿Validación,Resultado
-Completitud numérica (0 NaN en variables numéricas),FALLA (7011 NaN)
+Completitud numérica (0 NaN en variables numéricas),PASA
 Panel balanceado (mismas semanas por municipio),PASA (774 sem/mun)
 Consistencia log1p_casos = log(1 + casos_totales),PASA
 Consistencia tasa_100k,PASA
